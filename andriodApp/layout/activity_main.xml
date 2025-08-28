@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Welcome Text aligned to the top-left -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Fun Mode Switch aligned to the top-right -->
+    <Switch
+        android:id="@+id/switchFunMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun Mode"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Prime Image (rectangular) aligned below the welcome text -->
+    <ImageButton
+        android:id="@+id/buttonImagePrime"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/prime"
+        android:contentDescription="Prime Image"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <!-- Alo Image (circular) -->
+    <ImageButton
+        android:id="@+id/buttonImageAlo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/alo"
+        android:contentDescription="Alo Image"
+        android:layout_below="@id/buttonImagePrime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/dialog_holo_light_frame" />
+
+    <!-- Kazoku Image (circular) -->
+    <ImageButton
+        android:id="@+id/buttonImageKazoku"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kazoku"
+        android:contentDescription="Kazoku Image"
+        android:layout_below="@id/buttonImageAlo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/dialog_holo_light_frame" />
+
+</RelativeLayout>
